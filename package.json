@@ -1,0 +1,55 @@
+{
+  "name": "@jrevello/Training",
+  "version": "1.2.1",
+  "description": "This is just a training test",
+  "main": "./dist/main.bundle.js",
+  "module": "./dist/main.bundle.js",
+  "source": "./src/index.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "serve": "webpack serve --config webpack.dev.js",
+    "build:dev": "webpack --config webpack.dev.js",
+    "build:prod": "webpack --config webpack.prod.js",
+    "lint": "eslint --ignore-path .eslintignore . --ext .js",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "keywords": [],
+  "author": "JRevello",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.13.13",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "core-js": "^3.13.1",
+    "css-loader": "^5.2.6",
+    "eslint": "^7.27.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-html": "^6.1.2",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "html-webpack-plugin": "^5.3.1",
+    "jest": "^27.0.4",
+    "node-sass": "^6.0.0",
+    "path": "^0.12.7",
+    "prettier": "^2.3.0",
+    "sass-loader": "^12.0.0",
+    "style-loader": "^2.0.0",
+    "svg-sprite-loader": "^6.0.7",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  },
+  "jest": {
+    "testEnviorment": "dev"
+  }
+}
